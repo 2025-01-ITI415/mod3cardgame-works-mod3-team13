@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // This enum defines the variable type eCardState with four named values.      // a
-public enum eCardState { drawpile, mine, target, discard }
+public enum eCardStateG { drawpile, mine, target, discard }
 
 public class CardGolf : Card
 { // Make CardProspector extend Card        // b
     [Header("Dynamic: CardGolf")]
-    public eCardState state = eCardState.drawpile;                   // c
+    public eCardStateG state = eCardStateG.drawpile;                   // c
                                                                      // The hiddenBy list stores which other cards will keep this one face down
     public List<CardGolf> hiddenBy = new List<CardGolf>();
     // The layoutID matches this card to the tableau JSON if it’s a tableau card
